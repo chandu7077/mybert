@@ -477,8 +477,12 @@ def file_based_convert_examples_to_features(
 
   for (ex_index, example) in enumerate(examples):
     if ex_index % 10000 == 0:
+<<<<<<< HEAD
         pass
       #tf.logging.info("Writing example %d of %d" % (ex_index, len(examples)))
+=======
+      tf.logging.info("Writing example %d of %d" % (ex_index, len(examples)))
+>>>>>>> a0d053cfe734a5a346510a35be3c81caaea4598f
 
     feature = convert_single_example(ex_index, example, label_list,
                                      max_seq_length, tokenizer)
